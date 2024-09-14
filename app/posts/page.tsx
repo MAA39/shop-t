@@ -1,10 +1,10 @@
+import { getPosts } from "@/app/posts/data";
 import Link from "next/link";
-import { getPosts } from "./data";
 
 export default async function Page() {
   // データを取得
   const posts = await getPosts();
-  console.log(posts);
+
   return (
     <div>
       <h1>記事一覧</h1>
